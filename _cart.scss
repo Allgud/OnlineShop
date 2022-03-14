@@ -1,0 +1,205 @@
+@keyframes gradient {
+  0% {
+    background-position: 0 80%;
+  }
+  50% {
+    background-position: 100% 20%;
+    color: #ffffff;
+  }
+  100% {
+    background-position: 0 80%;
+  }
+}
+
+.cart__top {
+  background-image: url("./img/background/bg-cart.png");
+  height: 400px;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.cart__header {
+  @extend .catalog__header;
+}
+
+.cart {
+  margin-top: 64px;
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  gap: 32px;
+  &__content {
+    grid-column: span 8;
+  }
+
+  &__name-box {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 14px;
+  }
+
+  &__item {
+    border-top: 0.5px solid #cacdd8;
+    padding-top: 24px;
+    padding-bottom: 32px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+
+  &__left {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 32px;
+  }
+
+  &__info {
+    width: 276px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+  &__form {
+    background: $lightGreyColor;
+    border-radius: 20px;
+    min-height: 556px;
+    grid-column: span 4;
+    display: flex;
+    flex-direction: column;
+  }
+  &__price {
+    font-weight: 500;
+  }
+
+  &__buttons ul {
+    margin-top: 24px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+  }
+
+  &__button {
+    width: 200px;
+    height: 37px;
+    border: 1px solid $blackColor;
+    box-sizing: border-box;
+    border-radius: 50px;
+    background-color: inherit;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    font-family: inherit;
+  }
+}
+
+.item__title a {
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 29px;
+  color: $blackColor;
+  text-decoration: none;
+}
+
+.item__options ul {
+  display: flex;
+  gap: 30px;
+  margin-top: 16px;
+}
+
+.item__link {
+  font-size: 14px;
+  line-height: 210%;
+  text-decoration-line: underline;
+  color: $blackColor;
+  border: none;
+  background-color: inherit;
+  font-family: inherit;
+  cursor: pointer;
+  &:hover {
+    text-decoration: none;
+    color: $greyColor;
+  }
+}
+
+.cart__item input {
+  width: 71px;
+  height: 51px;
+  padding-left: 24px;
+  padding-right: 12px;
+  box-sizing: border-box;
+  font-size: 14px;
+  line-height: 210%;
+  font-family: inherit;
+  font-weight: 600;
+  background-color: $lightGreyColor;
+  border-radius: 6px;
+  border: none;
+  &:focus {
+    border: 0.5px solid $blackColor;
+  }
+}
+
+.form__title {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 36px;
+  text-align: center;
+  margin-top: 42px;
+  height: 36px;
+  padding: 8px 0px;
+}
+
+.form__list {
+  margin-top: 32px;
+  display: flex;
+  flex-direction: column;
+}
+
+.form__list input {
+  margin-bottom: 44px;
+  background-color: inherit;
+  border: none;
+  border-bottom: 1px solid #cacdd8;
+  width: 80%;
+  margin-left: 27px;
+  &:focus {
+    outline: none;
+  }
+  &:last-child {
+    margin-bottom: 64px;
+  }
+  &::placeholder {
+    font-size: 14px;
+    line-height: 17px;
+    color: $blackColor;
+    font-family: $mainFont;
+  }
+}
+
+.form__total {
+  text-align: center;
+  font-size: 24px;
+  line-height: 29px;
+}
+
+.total__number {
+  font-weight: 500;
+}
+
+.form__btn {
+  height: 41px;
+  margin: 18px 45px;
+  border-radius: 20px;
+  font-size: 16px;
+  line-height: 20px;
+  font-family: inherit;
+  background: linear-gradient(45deg, #ffffff, #000000);
+  background-size: 200% 200%;
+  animation: gradient 5s ease infinite;
+  &:hover {
+    background: #000000;
+    color: #ffffff;
+    animation: none;
+  }
+}
