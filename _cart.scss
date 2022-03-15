@@ -60,7 +60,7 @@
     gap: 16px;
   }
   &__form {
-    background: $lightGreyColor;
+    background: $color-light-grey;
     border-radius: 20px;
     min-height: 556px;
     grid-column: span 4;
@@ -81,7 +81,7 @@
   &__button {
     width: 200px;
     height: 37px;
-    border: 1px solid $blackColor;
+    border: 1px solid $color-black;
     box-sizing: border-box;
     border-radius: 50px;
     background-color: inherit;
@@ -96,7 +96,7 @@
   font-weight: 500;
   font-size: 24px;
   line-height: 29px;
-  color: $blackColor;
+  color: $color-black;
   text-decoration: none;
 }
 
@@ -110,14 +110,14 @@
   font-size: 14px;
   line-height: 210%;
   text-decoration-line: underline;
-  color: $blackColor;
+  color: $color-black;
   border: none;
   background-color: inherit;
   font-family: inherit;
   cursor: pointer;
   &:hover {
     text-decoration: none;
-    color: $greyColor;
+    color: $color-grey;
   }
 }
 
@@ -131,11 +131,11 @@
   line-height: 210%;
   font-family: inherit;
   font-weight: 600;
-  background-color: $lightGreyColor;
+  background-color: $color-light-grey;
   border-radius: 6px;
   border: none;
   &:focus {
-    border: 0.5px solid $blackColor;
+    border: 0.5px solid $color-black;
   }
 }
 
@@ -172,8 +172,8 @@
   &::placeholder {
     font-size: 14px;
     line-height: 17px;
-    color: $blackColor;
-    font-family: $mainFont;
+    color: $color-black;
+    font-family: $font-family-general;
   }
 }
 
