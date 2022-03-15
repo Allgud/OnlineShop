@@ -4,7 +4,7 @@
 
 @mixin interactive-elements {
   font-family: $font-family-general;
-  color: $color-white:;
+  color: $color-white;
   font-weight: 400;
   font-size: 16px;
   line-height: 20px;
@@ -30,7 +30,7 @@ ul {
 
 .button:hover {
   background-color: $color-black;
-  color: $color-white:;
+  color: $color-white;
 }
 
 .center {
@@ -64,7 +64,7 @@ ul {
 }
 
 .search__input {
-  border: 1px solid $color-white:;
+  border: 1px solid $color-white;
   width: 288px;
   height: 41px;
   padding: 12px 32px;
@@ -97,7 +97,7 @@ ul {
 
 .header {
   padding-top: 64px;
-  color: $color-white:;
+  color: $color-white;
 
   &__title {
     max-width: 792px;
@@ -144,7 +144,7 @@ ul {
   display: flex;
   justify-content: center;
   align-items: center;
-  color: $color-white:;
+  color: $color-white;
 
   font-weight: 600;
   font-size: 34px;
@@ -287,7 +287,7 @@ ul {
     gap: 12px;
   }
   &__input {
-    background: $color-white:;
+    background: $color-white;
     border: 1px solid #c4c4c4;
     font-size: 15px;
     line-height: 18px;
